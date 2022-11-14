@@ -1,0 +1,14 @@
+[package]
+name = "rustfib"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+name = "rustfib"
+crate-type = ["cdylib"]
+
+[dependencies.cpython]
+cpython = "0.7.1"
+features = ["extension-module"]
